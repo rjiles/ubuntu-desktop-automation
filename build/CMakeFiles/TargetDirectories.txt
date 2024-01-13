@@ -1,0 +1,3 @@
+/home/john/ubuntu-desktop-automation/build/CMakeFiles/bot.dir
+/home/john/ubuntu-desktop-automation/build/CMakeFiles/edit_cache.dir
+/home/john/ubuntu-desktop-automation/build/CMakeFiles/rebuild_cache.dir
