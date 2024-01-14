@@ -4,4 +4,4 @@ wayland must be disabled
 mkdir build 
 cd build 
 cmake -G "Unix Makefiles" ../source 
-cmake --build . --config Release --target bot
+cmake --build . --config Release --target ubuntuDesktopBot

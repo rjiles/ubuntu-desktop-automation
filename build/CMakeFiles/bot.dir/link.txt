@@ -1,1 +1,0 @@
-/usr/bin/c++ CMakeFiles/bot.dir/main.cpp.o -o bot 

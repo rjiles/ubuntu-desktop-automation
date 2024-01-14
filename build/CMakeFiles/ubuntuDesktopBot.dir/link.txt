@@ -1,0 +1,1 @@
+/usr/bin/c++ CMakeFiles/ubuntuDesktopBot.dir/main.cpp.o CMakeFiles/ubuntuDesktopBot.dir/mouseMover.cpp.o -o ubuntuDesktopBot 

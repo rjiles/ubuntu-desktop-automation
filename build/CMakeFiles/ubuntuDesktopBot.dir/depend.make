@@ -1,2 +1,2 @@
-# Empty dependencies file for bot.
+# Empty dependencies file for ubuntuDesktopBot.
 # This may be replaced when dependencies are built.

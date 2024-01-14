@@ -8,7 +8,8 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/john/ubuntu-desktop-automation/source/main.cpp" "CMakeFiles/bot.dir/main.cpp.o" "gcc" "CMakeFiles/bot.dir/main.cpp.o.d"
+  "/home/john/ubuntu-desktop-automation/source/main.cpp" "CMakeFiles/ubuntuDesktopBot.dir/main.cpp.o" "gcc" "CMakeFiles/ubuntuDesktopBot.dir/main.cpp.o.d"
+  "/home/john/ubuntu-desktop-automation/source/mouseMover.cpp" "CMakeFiles/ubuntuDesktopBot.dir/mouseMover.cpp.o" "gcc" "CMakeFiles/ubuntuDesktopBot.dir/mouseMover.cpp.o.d"
   )
 
 # Targets to which this target links.
