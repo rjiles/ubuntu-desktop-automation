@@ -48,7 +48,7 @@ tuple<int, int> mouseMover::getMousePosition() {
 
 void mouseMover::move_mouse(int x, int y)
 {
-    cout << "Moving mouse to " << x << ", " << y << endl;
+    //cout << "Moving mouse to " << x << ", " << y << endl;
     char xdotool[] = { 'x', 'd', 'o', 't', 'o', 'o', 'l', '\0' }; //getting rid of warnings
     char mousemove[] = { 'm', 'o', 'u', 's', 'e', 'm', 'o', 'v', 'e', '\0' }; //getting rid of warnings
     stringstream strs_x;
