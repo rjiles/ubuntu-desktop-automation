@@ -10,6 +10,7 @@ namespace ef
     public:
         int find(int, char**);
         void MatchingMethod( int, void* );
+        void ImageFromDisplay(std::vector<uint8_t>&, int&, int&, int&);
     };
 
 }

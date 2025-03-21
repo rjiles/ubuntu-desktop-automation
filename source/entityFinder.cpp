@@ -30,8 +30,26 @@ int entityFinder::find( int argc, char** argv )
 {
   CommandLineParser parser( argc, argv, keys );
   samples::addSamplesDataSearchSubDirectory( "../entities/" );
-  img = imread( "/home/john/ubuntu-desktop-automation/entities/multi.png" );
+  //img = imread( "/home/john/ubuntu-desktop-automation/entities/multi.png" );
   templ = imread( "/home/john/ubuntu-desktop-automation/entities/logo_2.png" );
+
+  int Width = 1920;
+  int Height = 1080;
+  int Bpp = 32;
+  std::vector<std::uint8_t> Pixels;
+
+  ImageFromDisplay(Pixels, Width, Height, Bpp);
+
+  if (Width && Height)
+  {
+      Mat img = Mat(Height, Width, Bpp > 24 ? CV_8UC4 : CV_8UC3, &Pixels[0]); //Mat(Size(Height, Width), Bpp > 24 ? CV_8UC4 : CV_8UC3, &Pixels[0]); 
+
+      //namedWindow("WindowTitle", WINDOW_AUTOSIZE);
+      imshow("Display window", img);
+
+      waitKey(0);
+  }
+
   if(argc > 3) {
     use_mask = true;
     mask = imread(samples::findFile( parser.get<String>("@input3") ), IMREAD_COLOR );
@@ -78,7 +96,7 @@ void entityFinder::MatchingMethod( int, void* )
   return;
 }
 
-void ImageFromDisplay(std::vector<uint8_t>& Pixels, int& Width, int& Height, int& BitsPerPixel)
+void entityFinder::ImageFromDisplay(std::vector<uint8_t>& Pixels, int& Width, int& Height, int& BitsPerPixel)
 {
     Display* display = XOpenDisplay(nullptr);
     Window root = DefaultRootWindow(display);
